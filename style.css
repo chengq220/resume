@@ -12,7 +12,7 @@ h1{
 	text-align: center;
 }
 
-img{ 
+img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -80,15 +80,15 @@ img{
 
 .contact-container{
 	padding-bottom: 2vh;
-	
+
 }
 
 .bold-main{
 	font-weight: bold;
 	font-family: Alegor;
-	font-size: 15vh;
-	margin-left: 10vh;
-	margin-top: 15vh
+	font-size: 50px;
+	margin-left: 10%;
+	margin-top: 15%
 }
 
 #info hr{
@@ -99,14 +99,10 @@ img{
 button{
 	padding: 30px;
 	margin-left: 40%;
-	
-	
+
+
 }
 
 @media only screen and (max-width:1080px){
-	
+
 }
-
-
-
-
