@@ -1,0 +1,112 @@
+html{
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+body, h1, span, ul, p{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+}
+
+img{ 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1vh;
+}
+
+#navbar{
+	width: 10%;
+	height: 100%;
+	list-style-type: none;
+}
+
+#navbar li{
+	text-align: center;
+}
+
+#navbar li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 3vh 1.5vw;
+	font-size: 2vh
+}
+
+#navbar li a:hover{
+	background-color: #c2c2d6;
+	color: white;
+}
+
+#navbar li a.active{
+	background-color: #c2c2d6;
+	color: white;
+}
+
+.page-header{
+	top: 0;
+	background-color: #b5b5c0;
+	height: 3vh;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 10%;
+	height: 100%;
+}
+
+.contact{
+	position: relative;
+	top: 52vh;
+}
+
+
+
+.section-card{
+	height: 100vh;
+}
+
+#info{
+	position: absolute;
+	width: 90%;
+	top: 3vh;
+	left: 10%;
+}
+
+.contact-container{
+	padding-bottom: 2vh;
+	
+}
+
+.bold-main{
+	font-weight: bold;
+	font-family: Alegor;
+	font-size: 15vh;
+	margin-left: 10vh;
+	margin-top: 15vh
+}
+
+#info hr{
+	position: relative;
+	top: 60vh;
+}
+
+button{
+	padding: 30px;
+	margin-left: 40%;
+	
+	
+}
+
+@media only screen and (max-width:1080px){
+	
+}
+
+
+
+
