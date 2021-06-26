@@ -1,5 +1,4 @@
 html{
-	height: 100vh;
 	scroll-behavior: smooth;
 }
 
@@ -14,14 +13,13 @@ h1{
 
 img{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	padding-top: 1vh;
 }
 
 #navbar{
 	width: 10%;
 	height: 100%;
+	float: left;
 	list-style-type: none;
 }
 
@@ -34,7 +32,7 @@ img{
 	text-decoration: none;
 	color: black;
 	padding: 3vh 1.5vw;
-	font-size: 2vh
+	font-size: 1.5vw;
 }
 
 #navbar li a:hover{
@@ -60,13 +58,6 @@ img{
 	height: 100%;
 }
 
-.contact{
-	position: relative;
-	top: 52vh;
-}
-
-
-
 .section-card{
 	height: 100vh;
 }
@@ -79,16 +70,21 @@ img{
 }
 
 .contact-container{
-	padding-bottom: 2vh;
+		padding-left: 2vw;
+}
 
+.contact{
+	position: fixed;
+	bottom: 0;
 }
 
 .bold-main{
+	display: none;
 	font-weight: bold;
 	font-family: Alegor;
-	font-size: 50px;
-	margin-left: 10%;
-	margin-top: 15%
+	font-size: 5vw;
+	margin-left: 10vw;
+	padding-top: 15vh;
 }
 
 #info hr{
@@ -99,9 +95,8 @@ img{
 button{
 	padding: 30px;
 	margin-left: 40%;
-
-
 }
+
 
 @media only screen and (max-width:1080px){
 

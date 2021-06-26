@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>About Cheng</title>
-	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <script>
 	function init(){
@@ -22,7 +24,7 @@
 			navbar.classList.remove("sticky");
 		}
 	}
-	
+
 	function setActive(){
 		window.current.classList.remove("active");
 		if(window.pageYOffset <= position[0].offsetTop - 200){
@@ -41,45 +43,51 @@
 			tabs[3].classList.add("active");
 			window.current = tabs[3];
 		}
-	}	
+	}
+
+  $(document).ready(function(){
+    $(".bold-main").fadeIn(3000);
+  });
   </script>
-  
+
   <body onload = "init()">
 	<div class = "page-header"></div>
-	<ul id = "navbar">
-		<li><a id = 'nav_tab1' class = 'active' href='#'>Home</a></li>
-		<li><a id = 'nav_tab2' href='#section2'>About</a></li>
-		<li><a id = 'nav_tab3' href='#section3'>Projects</a></li>
-		<li><a id = 'nav_tab4' href='#section4'>Experience</a></li>
-		<div class = "contact">
-			<!--<p>Follow Me @</p> need to fix the contact container-->
-			<div class = 'contact-container'>
-				<a href = 'https://github.com' target = '_blank' rel="noreferrer noopener">
-					<img src = 'assets\GitHub.png' alt = 'Github' width = '40' height = '40' >
-				</a>
-			</div>
-			<div class = 'contact-container'>
-				<a href = 'https://linkedin.com' target = '_blank' rel="noreferrer noopener">
-					<img src = 'assets\linkedin.png' alt = 'LinkedIn' width = '80' height = '80'>
-				</a>
-			</div>
-		</div>
-	</ul>
-	<div id = "info">
-		<div id = "section1" class = "section-card">
-			<div class = "bold-main">I am <br>a Developer</br></div>
-			<button onclick = "window.location.href = '#section2'">A Centered Button</button>
-			<hr style = 'border: 1px solid #000000; width: 50%'>
-		</div>
-		<div id = "section2" class = "section-card">
-			<hr style = 'border: 1px solid #000000; width: 50%'>
-		</div>
-		<div id = "section3" class = "section-card">
-			<hr style = 'border: 1px solid #000000; width: 50%'>
-		</div>
-		<div id = "section4" class = "section-card">
-			<hr style = 'border: 1px solid #000000; width: 50%'>
-		</div>
-	</div>
+  <div class = "wrapper">
+  	<ul id = "navbar">
+  		<li><a id = 'nav_tab1' class = 'active' href='#'>Home</a></li>
+  		<li><a id = 'nav_tab2' href='#section2'>About</a></li>
+  		<li><a id = 'nav_tab3' href='#section3'>Projects</a></li>
+  		<li><a id = 'nav_tab4' href='#section4'>Experience</a></li>
+  	</ul>
+    <div class = "contact">
+      <!--<p>Follow Me @</p> need to fix the contact container-->
+      <div class = 'contact-container'>
+        <a href = 'https://github.com' target = '_blank' rel="noreferrer noopener">
+          <img src = 'assets\GitHub.png' alt = 'Github' width = '40vw' height = '40vh' >
+        </a>
+      </div>
+      <div class = 'contact-container'>
+        <a href = 'https://linkedin.com' target = '_blank' rel="noreferrer noopener">
+          <img src = 'assets\linkedin.png' alt = 'LinkedIn' width = '60vw' height = '60vh'>
+        </a>
+      </div>
+    </div>
+    </div>
+  	<div id = "info">
+  		<div id = "section1" class = "section-card">
+  			<div class = "bold-main">I am <br>a Developer</br></div>
+  			<!--<button onclick = "window.location.href = '#section2'" style = "z-index: 1000;">A Centered Button</button>-->
+  			<hr style = 'border: 1px solid #000000; width: 50%'>
+  		</div>
+  		<div id = "section2" class = "section-card">
+  			<hr style = 'border: 1px solid #000000; width: 50%'>
+  		</div>
+  		<div id = "section3" class = "section-card">
+  			<hr style = 'border: 1px solid #000000; width: 50%'>
+  		</div>
+  		<div id = "section4" class = "section-card">
+  			<hr style = 'border: 1px solid #000000; width: 50%'>
+  		</div>
+  	</div>
   </body>
 </html>
